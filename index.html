@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Random Quote Machine</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <style type="text/css">
+
+  	body {
+  		color: black;
+  		font-size: 21px;
+  		font-family: Lato;
+  	}
+
+  	i {
+  		font-size: 18px;
+  		color: gray;
+  	}
+
+  	h1 {
+  		font-family: Bitter;
+  		color: #0080FF;
+  	}
+
+
+  	.mystyle {
+  		margin: auto;
+  		border: 2px solid gray;
+  		border-radius: 16px;
+  		box-shadow: 10px 10px 5px #888888;
+  		padding: 40px;
+  		width: 60%;
+
+
+
+  	}
+  </style>
+
+
+</head>
+<body>
+	<div class="container">
+	
+	<center>
+		<h1><span class="glyphicon glyphicon-bookmark"></span> The Random Quote Machine </h1>
+	<button type="button" class="btn btn-warning btn-lg " style="margin:50px" onclick="randomQuo()">Generate Random Quote</button>
+
+	<div class="mystyle">
+	<p id="randomQuote">
+		A man may imagine things that are false, but he can only understand things that are true, for if the things be false, the apprehension of them is not understanding.
+	</p>
+	</div>
+	</center>
+	<script type="text/javascript">
+		//var q1 = "today is a good day";
+		//var q2 = "hey world"; 
+		//var q3 = "my name is Aditya"; 
+		//var q4 = "I am learning javascript";
+
+		
+
+		
+		/*function randomQuo() { 
+			var x = document.getElementById("randomQuote");
+			var quotes = ["today is a good day", "hey world", "my name is Aditya"]; 
+			var authors = ["Aditya"; "author1"; "anonymous"]; 
+			//var cars = ["suzuki", "honda", "lexus", "chevrolet"];
+			//x.innerHTML = cars[Math.floor(Math.random() * cars.length)];
+			//var quotes = [q1, q2, q3, q4]; 
+			//x.innerHTML = quotes[Math.floor(Math.random() * quotes.length)]
+
+			var randoms = Math.floor(Math.random() * 3);
+
+			x.innerHTML = "abc";
+
+
+		}*/
+
+		function randomQuo() {
+			//var x = document.getElementById("randomQuote");
+			var quotes = ["Don't aim at success - the more you aim at it and make it a target, the more you are going to miss it. For success, like happiness, cannot be pursued; it must ensue... as the unintended side-effect of one's personal dedication to a course greater than oneself.", "Integrity without knowledge is weak and useless, and knowledge without integrity is dangerous and dreadful.", "What makes the engine go? Desire, desire, desire.", 
+				"When you close your doors, and make darkness within, remember never to say that you are alone, for you are not alone; nay, God is within, and your genius is within. And what need have they of light to see what you are doing?" , "I have a Woody Allen Jewish attitude to life: that it's all going to be disastrous. That it hasn't all been that way is simply down to some random quirk of fate.", "Maybe life is random, but I doubt it." , "Being the richest man in the cemetery doesn't matter to me. Going to bed at night saying we've done something wonderful, that's what matters to me." , "Design is not just what it looks like and feels like. Design is how it works." , "Innovation distinguishes between a leader and a follower.", "It's really hard to design products by focus groups. A lot of times, people don't know what they want until you show it to them." , "Sometimes life is going to hit you in the head with a brick. Don't lose faith.", "Success is a lousy teacher. It seduces smart people into thinking they can't lose." , "I really had a lot of dreams when I was a kid, and I think a great deal of that grew out of the fact that I had a chance to read a lot." , "In a world that's changing really quickly, the only strategy that is guaranteed to fail is not taking risks"
+			]; 
+			var authors = ["Viktor Frankl", "Samuel Johnson", "Stanley Kunitz", "Epictetus", "Antony Sher", "Steven Tyler", "Steve Jobs", "Steve jobs", "Steve jobs", "Steve jobs", "Steve jobs", "Bill Gates", "Bill Gates", "Mark Zuckerberg"]; 
+			var y = Math.floor(Math.random() * quotes.length); 
+
+			//var breakTag = document.createElement("br"); 
+			//var addText = document.createTextNode(authors[y]);
+			//var d = breakTag.appendChild(addText);
+
+			document.getElementById("randomQuote").innerHTML= quotes[y] + "<br><br> <i>" + authors[y] + "</i>" ;
+			//var c = document.getElementById("randomQuote").innerHTML= quotes[y];
+			//c.appendChild(d); 
+
+
+
+		} 
+	</script> 
+	</div>
+
+	<footer style="background-color:black; color:gray; width:100%; height:15%; padding-top:30px; font-size:16px; bottom:0; position:fixed;"> 
+		<div class="container"> Developed by - Aditya Ekawade</div>
+	 
+	</footer>	
+</body>
+</html>
